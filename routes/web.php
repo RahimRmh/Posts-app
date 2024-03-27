@@ -56,27 +56,9 @@ Route::post('/mail',function(){
     Mail::to($email)->send(new Discountoffer());
     return back();
 });
-// // Route::post('/products',[ProductController::class,'createproduct']);
 
+Route::post('/search_post',[postscontroller::class,'search']);
 
-// //or
-// Route::get('/posts/create',[postscontroller::class,'create']);
-
-
-
-// // Route::post('/posts',[postscontroller::class,'store']);
-
-
-// Route::get('/posts',[postscontroller::class,'index']);
-
-// Route::get('/posts/{id}',[postscontroller::class,'show']);
-// Route::post('/search_post',[postscontroller::class,'search']);
-// // Route::get('/a',[postscontroller::class,'a']);
    
 
-
-
-
-// Route::get('/check',[ProjectController::class , 'check_user']);
-// Route::get('/get_names',[nameController::class , 'names']);
 
